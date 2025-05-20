@@ -28,8 +28,9 @@ function Feature() {
   const [isEnemyPunching, setEnemyPunching] = useState(false);
 
   // 🔊 Play sound
-  const audio = new Audio(`${import.meta.env.BASE_URL}sounds/773737__qubodup__punch-1.wav`);
-  audio.play().catch(err => console.error('Audio failed to play:', err));
+ const audio = new Audio(`${import.meta.env.BASE_URL}sounds/773737__qubodup__punch-1.wav`);
+ audio.play().catch(err => console.error('Audio failed to play:', err));
+
   
   const punch = () => {
     if (enemyHealth <= 0) return;
