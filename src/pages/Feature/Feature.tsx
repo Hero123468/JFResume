@@ -27,17 +27,17 @@ function Feature() {
   const [isPlayerPunching, setPlayerPunching] = useState(false);
   const [isEnemyPunching, setEnemyPunching] = useState(false);
 
+  // 🔊 Play sound
+  const audio = new Audio('JFResume/sounds/773737__qubodup__punch-1.wav');
+  audio.play().catch(err => console.error('Audio failed to play:',err))
+  
   const punch = () => {
     if (enemyHealth <= 0) return;
     setPlayerPunching(true);
     setTimeout(() => setPlayerPunching(false), 200);
     setEnemyHealth(h => Math.max(0, h - 10));
-
-  // 🔊 Play sound
-  const audio = new Audio('/sounds/773737__qubodup__punch-1.wav');
-  audio.volume = 0.7;
-  audio.play();
-  };
+};
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
