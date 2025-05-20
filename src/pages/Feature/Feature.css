@@ -1,0 +1,38 @@
+.arena {
+  text-align: center;
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+.boxers {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.boxer {
+  transition: transform 0.1s;
+}
+
+.boxer.punch {
+  transform: translateX(20px);
+}
+
+.health-bar {
+  margin: 0.5rem 0;
+}
+
+.bar-outer {
+  width: 100%;
+  background: #ccc;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar-inner {
+  height: 100%;
+  background: green;
+  transition: width 0.3s ease;
+}

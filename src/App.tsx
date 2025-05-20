@@ -5,6 +5,7 @@ import Ecom from './pages/Ecom/Ecom'
 import Feature from './pages/Feature/Feature'
 import Resume from './pages/Resume/Resume'
 
+
 export default function App() {
   return (
     <div>
@@ -19,7 +20,7 @@ export default function App() {
         {/* Default page */}
         <Route path="/" element={<Home />} /> 
         <Route path="/Ecom" element={< Ecom />} />
-        <Route path="/Feature" element={< Feature />} />
+        <Route path="/feature" element={< Feature />} />
         <Route path="/Resume" element={< Resume/>} />
         {/* Redirect unknown paths */}
         <Route path="*" element={<Navigate to="/" />} /> 
