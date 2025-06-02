@@ -13,7 +13,7 @@ export default function App() {
       <nav style={{ padding: '1em', background: '#eee'}}>
         <Link to="/" style={{ marginRight: 'irem' }}>Home </Link>
         <Link to="/Ecom" style={{ marginRight: 'irem' }}>Ecom </Link>
-        <Link to="/Feature" style={{ marginRight: 'lrem' }}>Feature </Link>
+        <Link to="/feature" style={{ marginRight: 'lrem' }}>Feature </Link>
         <Link to="/Resume">Resume</Link>
       </nav>
       <Routes>
