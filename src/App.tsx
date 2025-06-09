@@ -1,12 +1,46 @@
-import { Routes, Route, Link, Navigate } from 'react-router-dom';
+import { Routes, Route, Link, Navigate, useLocation } from 'react-router-dom';
 import './App.css'
 import Home from './pages/Home/Home'
 import Ecom from './pages/Ecom/Ecom'
 import Feature from './pages/Feature/Feature'
 import Resume from './pages/Resume/Resume'
-
+import { useEffect, useState } from 'react';
+import Footer from './Footer/footer'
+import './App.css'; // Import CSS file for app styling
 
 export default function App() {
+  const location = useLocation(); 
+  //console.log("reactlocationis ",location)
+  //console.log("windowlocationis ",window)
+  
+
+  const [url,thingthatchangesurl] = useState("");
+ useEffect(() => {
+        const handlePopState = () => {
+            thingthatchangesurl(window.location.pathname);
+        };
+        window.addEventListener('popstate', handlePopState);
+  function App() {
+       return (
+         <div className="app-container">
+           {/* Your other components/content here */}
+           <Footer />
+         </div>
+       );
+
+        return () => {
+            window.removeEventListener('popstate', handlePopState);
+        };
+    }, []);
+ 
+  // useEffect(
+  //   ()=>{
+  //     thingthatchangesurl(location.pathname)
+  //     console.log(url)
+  //   },
+  //   [location]
+  // )
+
   return (
     <div>
 
@@ -23,7 +57,7 @@ export default function App() {
         <Route path="/feature" element={< Feature />} />
         <Route path="/Resume" element={< Resume/>} />
         {/* Redirect unknown paths */}
-        <Route path="*" element={<Navigate to="/" />} /> 
+      {/* <Route path="*" element={<Navigate to="/" />} />  */}
 
       </Routes>
     </div>

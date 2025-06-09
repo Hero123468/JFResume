@@ -1,0 +1,26 @@
+/*header{
+    display: flex;
+    flex-direction: row;
+    border: brown 1px solid ;
+    width: 100%;
+    border-color: aqua;
+
+header img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.loging{
+    width:30%;
+    border: 4px green solid; 
+    text-align: center ;
+}
+
+.navstyle{
+    padding: 1em;
+    background: #eee;
+    width: 70% ;
+
+}
+/*
