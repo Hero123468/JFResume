@@ -4,4 +4,4 @@
 
 // How you'd use it in a REact component (.tsx):
 // import { addTwoNumbers } from './utils/math.ts' ;
-// const sum = addTwoNumbers(5,10); // Type script will check if you pass numbers
+// const sum = addTwoNumbers(5,10); // Type script will check if you pass numbers*/

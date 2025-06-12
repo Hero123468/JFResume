@@ -21,17 +21,17 @@ export default function App() {
         };
         window.addEventListener('popstate', handlePopState);
   function App() {
-       return (
+       /*return (
          <div className="app-container">
-           {/* Your other components/content here */}
+           {/* Your other components/content here }
            <Footer />
          </div>
-       );
+       );*/
 
         return () => {
             window.removeEventListener('popstate', handlePopState);
         };
-    }, []);
+    }, []) ;
  
   // useEffect(
   //   ()=>{
