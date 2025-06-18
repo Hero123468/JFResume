@@ -6,6 +6,7 @@ import Feature from './pages/Feature/Feature'
 import Resume from './pages/Resume/Resume'
 import { useEffect, useState } from 'react';
 import Footer from './Footer/Footer'
+import Header from './Header/Header'
 import './App.css'; // Import CSS file for app styling
 
 export default function App() {
@@ -37,7 +38,7 @@ export default function App() {
 
   return (
     <div>
-
+      <Header/>
       <nav style={{ padding: '1em', background: '#eee'}}>
         <Link to="/" style={{ marginRight: 'irem' }}>Home </Link>
         <Link to="/Ecom" style={{ marginRight: 'irem' }}>Ecom </Link>
@@ -53,7 +54,7 @@ export default function App() {
         
         {/* Redirect unknown paths */}
       {/* <Route path="*" element={<Navigate to="/" />} />  */}
-
+    
       </Routes>
       <Footer/>
     </div>
