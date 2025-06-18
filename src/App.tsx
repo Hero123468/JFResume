@@ -5,7 +5,7 @@ import Ecom from './pages/Ecom/Ecom'
 import Feature from './pages/Feature/Feature'
 import Resume from './pages/Resume/Resume'
 import { useEffect, useState } from 'react';
-//import Footer from './Footer/footer'
+import Footer from './Footer/Footer'
 import './App.css'; // Import CSS file for app styling
 
 export default function App() {
@@ -50,10 +50,12 @@ export default function App() {
         <Route path="/Ecom" element={< Ecom />} />
         <Route path="/feature" element={< Feature />} />
         <Route path="/Resume" element={< Resume/>} />
+        
         {/* Redirect unknown paths */}
       {/* <Route path="*" element={<Navigate to="/" />} />  */}
 
       </Routes>
+      <Footer/>
     </div>
 
   )

@@ -1,12 +1,11 @@
-    /*import React from 'react';
-     import './Footer.css'; // Import CSS file for styling
+    import React from 'react';
+     import './Footer.css'; 
 
      const Footer: React.FC = () => {
        return (
          <footer className="footer">
            <div className="footer-content">
-             <p>&copy; {new Date().getFullYear()} Your Company Name</p>
-             {/* Add more content as needed *//*}
+             <p>&copy; {new Date().getTime()} Jesse Falleur Enterprises</p>
            </div>
          </footer>
        );
