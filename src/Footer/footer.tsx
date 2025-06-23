@@ -5,7 +5,7 @@
        return (
          <footer className="footer">
            <div className="footer-content">
-             <p>&copy; {new Date().getTime()} Jesse Falleur Enterprises</p>
+             <p>&copy; {new Date().getFullYear()} Jesse Falleur Enterprises</p>
            </div>
          </footer>
        );

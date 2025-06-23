@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css'
 import Home from './pages/Home/Home'
 import Ecom from './pages/Ecom/Ecom'
@@ -39,12 +39,6 @@ export default function App() {
   return (
     <div>
       <Header/>
-      <nav style={{ padding: '1em', background: '#eee'}}>
-        <Link to="/" style={{ marginRight: 'irem' }}>Home </Link>
-        <Link to="/Ecom" style={{ marginRight: 'irem' }}>Ecom </Link>
-        <Link to="/feature" style={{ marginRight: 'lrem' }}>Feature </Link>
-        <Link to="/Resume">Resume</Link>
-      </nav>
       <Routes>
         {/* Default page */}
         <Route path="/" element={<Home />} /> 

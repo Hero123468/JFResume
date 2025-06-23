@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import './Header.css';
+// import picture from 'A.jpg'
 
 function Header() {
   // Mock login state
@@ -11,8 +13,13 @@ function Header() {
     <header>
       { /*Brand image here*/ }
 
-      <img src="https://via.placeholder.com/150" alt="Brand Logo" style={{ height: '50px', margin: '1em' }} />
-
+      <img src="/pictures/A.jpg" alt="Brand Logo"/>
+    <nav style={{}}>
+        <Link to="/" style={{ marginRight: 'irem' }}>Home </Link>
+        <Link to="/Ecom" style={{ marginRight: 'irem' }}>Ecom </Link>
+        <Link to="/feature" style={{ marginRight: 'lrem' }}>Feature </Link>
+        <Link to="/Resume">Resume</Link>
+    </nav>
       <div className="loging" >
         { /*Mock login/logout toggle*/ }
         {isLoggedIn ? (
