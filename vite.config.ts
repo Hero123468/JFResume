@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   // Replace with your repo name if it's different
-  base: '/', 
+  base: '/JFResume/', 
   plugins: [react()],
 });
