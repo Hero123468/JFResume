@@ -1,4 +1,10 @@
+import ProductList from "../../Components/ProdcutList";
+
 function Ecom(){
-    return <h1> Ecom </h1>
+    return (
+        <div>
+            <ProductList/>
+        </div>
+    )
 }
 export default Ecom;
