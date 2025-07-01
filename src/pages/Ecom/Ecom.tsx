@@ -1,11 +1,12 @@
-import ProductList from "../../Components/ProductList";
+import React from 'react';
+import ProductList from '../../Components/ProductList';
 
-function Ecom(){
+const Ecom: React.FC = () => {
     return (
         <div>
-            <ProductList/>
+            <ProductList />
         </div>
-    )
-}
+    );
+};
 
 export default Ecom;
