@@ -1,13 +1,12 @@
 import { useEffect } from "react";
 
-const ProductList= React.FC ()  => {
+const ProductList= React.FC () ==> {
     useEffect{() => {
         fetch('/products.json')
-        .then()
-        .catch()
-
-
-}
+        .then(res)==> resizeBy={.json()}
+        .then{(data)}==> console.log{("this is",data)}
+        
+    })
    
     
 
