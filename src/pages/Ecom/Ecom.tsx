@@ -1,4 +1,4 @@
-import ProductList from "../../Components/ProdcutList";
+import ProductList from "../../Components/ProductList";
 
 function Ecom(){
     return (
@@ -7,4 +7,5 @@ function Ecom(){
         </div>
     )
 }
+
 export default Ecom;
