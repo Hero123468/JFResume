@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import './Header.css';
-// import picture from 'A.jpg'
+// import picture from 'b.jpg'
 
 function Header() {
   // Mock login state
@@ -17,7 +17,7 @@ function Header() {
     <header>
       { /*Brand image here*/ }
 
-      <img src="/pictures/A.jpg" alt="Brand Logo"/>
+      <img src="/pictures/b.jpg" alt="Brand Logo"/>
     <nav style={{}}>
         <Link to="/" style={{ marginRight: 'irem' }}>Home </Link>
         <Link to="/Ecom" style={{ marginRight: 'irem' }}>Ecom </Link>
