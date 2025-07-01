@@ -1,8 +1,15 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import path from 'path'
 
 export default defineConfig({
-  // Replace with your repo name if it's different
   base: '/JFResume/', 
+  resolve: {
+    alias: {
+      '@components': path.resolve(__dirname, 'src/Components'),
+    },
+
+  },
+
   plugins: [react()],
 });

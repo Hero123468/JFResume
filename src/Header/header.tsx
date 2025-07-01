@@ -1,12 +1,16 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import './Header.css';
 // import picture from 'A.jpg'
 
 function Header() {
   // Mock login state
+  const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const name="Jesse";
+  const name="Jesse"
+  function login (){
+
+  }
   return (
     <> 
            { /*TODO: add a home page*/ }
