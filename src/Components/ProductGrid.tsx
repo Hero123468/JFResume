@@ -4,7 +4,7 @@ export const ProductGrid: React.FC = () => {
     return (
         <div>
         style={{
-            display: "flex",
+            fvtdisplay: "flex",
             flexWrap: "wrap",
             gap: "24px",
             justifyContent: "center",
