@@ -1,5 +1,17 @@
 // src/Components/ProductList.tsx
 import React, { useState, useEffect } from 'react';
+import { Product } from '../types/Product';
+
+const ProductList = () => {
+  const [products, setProducts] = useState<Product[]>([]);
+
+  useEffect(() => {
+    fetch('/api/products')
+      .then(res => res.json())
+      .then(setProducts);
+  }, []);
+
+
 
 interface Product {
   id: number;
@@ -16,6 +28,20 @@ const ProductList: React.FC = () => {
       .then((data: Product[]) => setProducts(data))
       .catch(err => console.error('Error fetching products:', err));
   }, []);
+
+  return (
+    <ul>
+      {products.map(p => (
+        <li key={p.id}>
+          <h3>{p.title}</h3>
+          <img src={p.image} alt={p.title} width={100} />
+          <p>💲{p.price}</p>
+          <a href={p.link}>Buy Now</a>
+        </li>
+      ))}
+    </ul>
+  );
+};
 
   return (
     <div>
