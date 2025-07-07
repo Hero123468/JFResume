@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "express": "^5.1.0",
     "mongoose": "^8.16.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
+    "@types/express": "^5.0.3",
     "@types/mongoose": "^5.11.96",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
