@@ -1,11 +1,20 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "target": "ES6",                         // Or higher, like ES2020
+    "module": "commonjs",                   // Needed for Node
+    "esModuleInterop": true,                // Allows default imports from CommonJS
+    "moduleResolution": "node",             // Helps resolve Node-style imports
+    "outDir": "./dist",                     // Compiled JS output
+    "rootDir": "./src",                     // TypeScript source directory
+    "baseUrl": ".",                         // You already had this!
     "paths": {
       "@components/*": ["src/Components/*"]
-    }
+    },
+    "strict": true,                         // Enables all strict type checks
+    "skipLibCheck": true                    // Optional: skip type checking node_modules
   },
-  "files": [],
+  "include": ["src/**/*"],                  // Include your TS source files
+  "exclude": ["node_modules", "dist"],      // Exclude compiled code
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
