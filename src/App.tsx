@@ -5,8 +5,8 @@ import Ecom from './pages/Ecom/Ecom'
 import Feature from './pages/Feature/Feature'
 import Resume from './pages/Resume/Resume'
 import { useEffect, useState } from 'react';
-import Footer from './Footer/Footer'
-import Header from './Header/Header'
+import Footer from './Footer/footer'
+import Header from './Header/header'
 import './App.css'; // Import CSS file for app styling
 
 export default function App() {
