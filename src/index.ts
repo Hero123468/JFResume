@@ -1,7 +1,7 @@
 // index.ts
 import express from 'express';
 import mongoose from 'mongoose';
-import productRoutes from './routes/productRoutes';
+import productRoutes from './routes/products';
 
 const app = express();
 app.use(express.json());

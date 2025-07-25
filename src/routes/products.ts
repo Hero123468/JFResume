@@ -1,8 +1,7 @@
 // routes/productRoutes.ts
 import { Router } from 'express';
 import type { Request, Response } from 'express';
-import { Product } from '../models/Product';
-
+import Product from '../models/Product';
 const router = Router();
 
 // CREATE
