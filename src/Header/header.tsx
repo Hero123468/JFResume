@@ -1,16 +1,18 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import './Header.css';
-// import picture from 'b.jpg'
 
 function Header() {
-  // Mock login state
-  // const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const name="Jesse"
-  function login (){
+  const name = "User";
 
+  function login() {
+    setIsLoggedIn(true);  
   }
+
+  function logout() {
+    setIsLoggedIn(false);
+  }
+
   return (
     <> 
            { /*TODO: add a home page*/ }
@@ -29,7 +31,7 @@ function Header() {
         {isLoggedIn ? (
             <span
               style={{ float: 'right', marginRight: '1em', cursor: 'pointer' }}
-              onClick={() => setIsLoggedIn(false)}
+              onClick={logout}
             >
               <span> Welcome {name} </span> &nbsp;
               Logout
@@ -38,7 +40,7 @@ function Header() {
             <>
               <span
                 style={{ float: 'right', marginRight: '1em', cursor: 'pointer' }}
-                onClick={() => setIsLoggedIn(true)}
+                onClick={login}
               >
                 Login
               </span>
@@ -50,6 +52,6 @@ function Header() {
       </div>        
     </header>
     </>
-    )
+ );
 }
 export default Header;
