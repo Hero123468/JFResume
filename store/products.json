@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "description": "Noise-canceling over-ear Bluetooth headphones with 40-hour battery life.",
+    "price": 99.99,
+    "category": "Electronics",
+    "image": "/images/wireless-headphones.jpg",
+    "stock": 25,
+    "rating": 4.5
+  },
+  {
+    "id": 2,
+    "name": "Smartwatch Pro 3",
+    "description": "Advanced fitness tracking smartwatch with GPS, heart rate monitor, and waterproof design.",
+    "price": 149.99,
+    "category": "Wearables",
+    "image": "/images/smartwatch-pro-3.jpg",
+    "stock": 40,
+    "rating": 4.7
+  },
+  {
+    "id": 3,
+    "name": "Gaming Mouse RGB",
+    "description": "High precision ergonomic gaming mouse with customizable RGB lighting.",
+    "price": 39.99,
+    "category": "Gaming",
+    "image": "/images/gaming-mouse.jpg",
+    "stock": 15,
+    "rating": 4.3
+  },
+  {
+    "id": 4,
+    "name": "Laptop Backpack",
+    "description": "Water-resistant travel backpack with 15.6\" laptop compartment and USB charging port.",
+    "price": 45.00,
+    "category": "Accessories",
+    "image": "/images/laptop-backpack.jpg",
+    "stock": 32,
+    "rating": 4.6
+  },
+  {
+    "id": 5,
+    "name": "4K UHD Monitor",
+    "description": "27-inch ultra HD monitor with 75Hz refresh rate and HDR support.",
+    "price": 229.99,
+    "category": "Electronics",
+    "image": "/images/4k-monitor.jpg",
+    "stock": 12,
+    "rating": 4.8
+  },
+  {
+    "id": 6,
+    "name": "Mechanical Keyboard",
+    "description": "Compact mechanical keyboard with red switches and RGB backlight.",
+    "price": 69.99,
+    "category": "Computers",
+    "image": "/images/mechanical-keyboard.jpg",
+    "stock": 18,
+    "rating": 4.4
+  }
+]
