@@ -5,7 +5,7 @@ import './Header.css';
 
 function Header() {
   // Mock login state
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const name="Jesse"
   function login (){
