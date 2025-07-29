@@ -4,42 +4,87 @@ const Resume = () => {
   return (
     <div className="resume-wrapper">
       <div className="resume-box">
-        <h1 className="name">Jesse Falleur </h1>
+        <h1 className="name">Jesse Falleur</h1>
         <p className="headline">Full-Stack JavaScript Developer</p>
 
+        {/* SUMMARY */}
         <section className="resume-section">
-          <h2>Summary</h2>
+          <h2>About Me</h2>
           <p>
-            Passionate full-stack JavaScript developer with 24 weeks of intensive hands-on training in modern web and mobile technologies. Skilled in building responsive web applications using React, Node, and Express.
+            I’m a developer who builds things step-by-step. Whether it’s fixing internet outages, walking someone through a bank issue, or writing a React app from scratch — I make it work, and I don’t quit until it does. After years in tech support, I pivoted into full-stack development to turn problem-solving into building. This resume is part of that journey.
           </p>
         </section>
 
+        {/* SKILLS */}
         <section className="resume-section">
-          <h2>Technical Skills</h2>
+          <h2>Skills</h2>
           <ul className="skills-list">
-            <li>HTML & CSS (Flexbox, Semantic Tags)</li>
-            <li>JavaScript (ES6+), jQuery, AJAX</li>
-            <li>ReactJS, React Native, TypeScript</li>
+            <li>JavaScript (ES6+), TypeScript, React</li>
+            <li>HTML, CSS, Responsive Design</li>
             <li>Node.js, Express, MongoDB</li>
             <li>Git, GitHub, REST APIs</li>
+            <li>Debugging, Dev Tools, API Testing</li>
           </ul>
         </section>
 
+        {/* EXPERIENCE */}
         <section className="resume-section">
-          <h2>Course Experience</h2>
+          <h2>Work Experience</h2>
+          
+          <div className="job">
+            <h3>Chat Support (Promoted) – T-Tech, Inc.</h3>
+            <p className="job-dates">Nov 2023 – Present</p>
+            <p>
+              Helped customers resolve banking issues under tight rules and real pressure. Translated complex problems into step-by-step solutions. Promoted after proving I could do more than just answer questions — I solve the right problem the right way.
+            </p>
+          </div>
+
+          <div className="job">
+            <h3>Technical Support – Charter Communications</h3>
+            <p className="job-dates">Jan 2018 – Jul 2019</p>
+            <p>
+              Helped customers fix network problems and understand what was happening. Turned jargon into plain English. Took detailed notes and always double-checked solutions.
+            </p>
+          </div>
+        </section>
+
+        {/* PROJECTS */}
+        <section className="resume-section">
+          <h2>Projects</h2>
+
+          <div className="project">
+            <h3>JFResume (React, Vite)</h3>
+            <p>
+              This website. Includes a custom-built resume, an e-commerce mockup, and a boxing-themed game with sound and animation. Designed, built, and debugged every line myself.
+            </p>
+          </div>
+
+          <div className="project">
+            <h3>Reactok (React)</h3>
+            <p>
+              A component-driven React app to practice looping, layout, and debugging. Focused on clean state management and real-time updates.
+            </p>
+          </div>
+        </section>
+
+        {/* EDUCATION */}
+        <section className="resume-section">
+          <h2>Education</h2>
           <ul>
-            <li><strong>Frontend:</strong> HTML, CSS, Bootstrap, Mobile-first Design</li>
-            <li><strong>JavaScript:</strong> Functions, Loops, Data Types, Conditions</li>
-            <li><strong>Projects:</strong> Cloned websites, Responsive apps, Final full-stack project</li>
-            <li><strong>ReactJS:</strong> Components, Props, Hooks, API Calls</li>
-            <li><strong>React Native:</strong> Mobile apps with API integration</li>
-            <li><strong>Backend:</strong> Node.js, Express, MongoDB</li>
+            <li>Full Stack Java Development – Claim Academy (Graduating Aug 2025)</li>
+            <li>A.A.A. in Motion Picture Production – KD Conservatory</li>
+            <li>Associate of Arts – St. Petersburg College</li>
           </ul>
         </section>
 
+        {/* CERTIFICATIONS */}
         <section className="resume-section">
-          <h2>Bonus Knowledge</h2>
-          <p>Sass, PostgreSQL, AWS, Linux, NGINX, JavaScript Algorithms</p>
+          <h2>Certifications (In Progress)</h2>
+          <ul>
+            <li>JavaScript, HTML, CSS – W3Schools (Aug 2025)</li>
+            <li>TypeScript, React – W3Schools (Fall 2025)</li>
+            <li>CPR Certified, Medication Aide – Past Roles</li>
+          </ul>
         </section>
       </div>
     </div>
