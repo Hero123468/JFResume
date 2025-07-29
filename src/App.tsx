@@ -22,6 +22,13 @@ export default function App() {
           <Route path="/Login" element={<Login />} />
         </Routes>
       </div>
+      
+      <nav>
+  <a href="/JFResume/">Home</a> | 
+  <a href="/JFResume/ecom">Ecom</a> | 
+  <a href="/JFResume/feature">Feature</a> | 
+  <a href="/JFResume/resume">Resume</a>
+     </nav>
 
       <Footer />
     </div>
