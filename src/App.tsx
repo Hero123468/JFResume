@@ -7,7 +7,7 @@ import Resume from './pages/Resume/Resume';
 import Login from './pages/Login/Login';
 import Navbar from './Components/src/components/Navbar';
 import Footer from './Footer/footer';
-import Link from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function App() {
   return (
