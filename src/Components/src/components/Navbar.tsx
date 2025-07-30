@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 function Navbar() {
     return (
         <nav style={{
-            background: 'transl',
-            color: 'black',
-            padding: '2px',
-            justifyContent: 'space-between',
-            width: "100%",
-            display: "flex" 
-            
+    background: '#f8f9fa', // light gray
+    color: '#212529',
+    padding: '0.75rem 1rem',
+    justifyContent: 'space-between',
+    width: '100%',
+    display: 'flex',
+    flexWrap: 'wrap',
+    alignItems: 'center',       
         }}>
             <div style={{fontWeight: 'bold'}}></div>
             <div>
