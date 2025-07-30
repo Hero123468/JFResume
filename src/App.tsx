@@ -7,6 +7,7 @@ import Resume from './pages/Resume/Resume';
 import Login from './pages/Login/Login';
 import Navbar from './Components/src/components/Navbar';
 import Footer from './Footer/footer';
+import Link from 'react-router-dom';
 
 export default function App() {
   return (
@@ -24,10 +25,10 @@ export default function App() {
       </div>
 
       <nav>
-  <a href="/JFResume/">Home</a> | 
-  <a href="/JFResume/Ecom">Ecom</a> | 
-  <a href="/JFResume/Feature">Feature</a> | 
-  <a href="/JFResume/Resume">Resume</a>
+  <Link to="/">Home</Link> |{""}  
+  <Link to="/Ecom">Ecom</Link> |{""} 
+  <Link to="/Feature">Feature</Link> |{""} 
+  <Link to="/Resume">Resume</Link>  |{""}
      </nav>
 
       <Footer />
