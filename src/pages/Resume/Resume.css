@@ -3,10 +3,17 @@
   margin: 0 auto;
   padding: 2rem;
   font-family: 'Helvetica Neue', sans-serif;
-  color: #333;
+  color: #212529;
+  background-color: #f8f9fa;
 }
 
 .resume-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+  border-radius: 1rem;
   border-left: 4px solid #444;
   padding-left: 1rem;
 }
@@ -51,3 +58,36 @@
   font-size: 0.9rem;
   color: #888;
 }
+@media (max-width: 768px) {
+  .resume-box {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .name {
+    font-size: 1.4rem;
+  }
+
+  .headline {
+    font-size: 1rem;
+  }
+
+  .resume-section h2 {
+    font-size: 1.1rem;
+  }
+
+  .skills-list li,
+  .resume-section ul li {
+    font-size: 0.9rem;
+  }
+
+  .job h3, .project h3 {
+    font-size: 1rem;
+  }
+
+  .job-dates {
+    font-size: 0.85rem;
+  }
+}
+
+
